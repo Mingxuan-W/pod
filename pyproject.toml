@@ -1,0 +1,14 @@
+[project]
+name = "pod"
+version = "0.1.0"
+
+dependencies = [
+    "moviepy==1.0.3",
+    "kornia==0.7.2",
+    "roma==1.5.0",
+    "seaborn==0.13.2",
+    "ml_collections==0.1.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["pod"]

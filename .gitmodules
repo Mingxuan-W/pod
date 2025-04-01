@@ -1,0 +1,6 @@
+[submodule "dependencies/garfield"]
+	path = dependencies/garfield
+	url = git@github.com:Mingxuan-W/garfield.git
+[submodule "dependencies/dig"]
+	path = dependencies/dig
+	url = git@github.com:Mingxuan-W/dig.git

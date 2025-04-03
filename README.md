@@ -39,7 +39,7 @@ git clone --recursive https://github.com/Mingxuan-W/pod.git
 
 # Running POD
 
-## 1. Object Selection (<img src="assets/exclamation.png" alt="Description" width="20"> Slightly different from [RSRD](https://github.com/kerrj/rsrd))
+### 1. Object Selection (<img src="assets/exclamation.png" alt="Description" width="20"> Slightly different from [RSRD](https://github.com/kerrj/rsrd))
   POD consists of two overlaid models: a GARField and a dino-embedded gaussian model (which we call DiG)
   
   1) *Train GARField* with `ns-train garfield --data <path/to/datasetname>`. This will produce an output config file inside `output/datasetname/garfield/<timestamp>/config.yml`
@@ -55,7 +55,8 @@ git clone --recursive https://github.com/Mingxuan-W/pod.git
   Finally, switch to "Cluster" mode, then click "Cluster Scene". For best results pick a scale such that the fewest parts are segmented, with just the part of interest remaining. You can cluster as many times as you want, the final clusters are saved for use in the motion recovery stage of the pipeline.Type the the object name for rgb file like "tractor", then click "Save State" button.
   
   All the saved .pt files are inside ```state``` folder. For every object , we need two state files (eg. ```tractor.pt``` and ```tractor_rgb.pt```)
-## 2. RSRD Init
+
+### 2. RSRD Init
 Now we can set the object related config file info inside the ``` pod/config/training_config.py ```
 prepare video dataset
 the dataset format will look like this
@@ -70,7 +71,7 @@ video/
 ``` 
 - python scripts/run_rsrd_init.py  --video_idx 0 --dataset_name tractor
 ``` 
-## 3. Pod Pipeline
+### 3. Pod Pipeline
 prepare video dataset
 the dataset format will look like this
 ```

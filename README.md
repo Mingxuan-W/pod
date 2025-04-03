@@ -50,10 +50,10 @@ git clone --recursive https://github.com/Mingxuan-W/pod.git
   <img src="assets/dig2.jpg" width="100%" alt="image">
   Next adjust the group level until only the object is segmented, like this:
   <img src="assets/dig3.jpg" width="100%" alt="image">
-  *A. Save rgb state*: Check the "Grouping State" box, type the the ```object + name_rgb``` for rgb file like ```tractor_rgb```, then click "Save State" button.
+  * A. Save rgb state*: Check the "Grouping State" box, type the the ```object + name_rgb``` for rgb file like ```tractor_rgb```, then click "Save State" button.
   <img src="assets/dig4.jpg" width="100%" alt="image">
   Finally, switch to "Cluster" mode, then click "Cluster Scene". For best results pick a scale such that the fewest parts are segmented, with just the part of interest remaining. You can cluster as many times as you want, the final clusters are saved for use in the motion recovery stage of the pipeline.
-  *B. Save clustering state*:  Type the the object name for rgb file like ```tractor```, then click "Save State" button.
+  * B. Save clustering state*:  Type the the object name for rgb file like ```tractor```, then click "Save State" button.
   
   All the saved .pt files are inside ```state``` folder. For every object , we need two state files (eg. ```tractor.pt``` and ```tractor_rgb.pt```)
 ## 2. RSRD Init

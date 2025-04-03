@@ -8,7 +8,7 @@ Predict-Optimize-Distill: A Self-Improving Cycle for 4D Object Understanding <im
 git clone --recursive https://github.com/Mingxuan-W/pod.git
 ```
 
-## Create conda environment
+### Create conda environment
 ``` 
 - conda create --name pod -y python=3.10 
 - conda activate pod
@@ -19,20 +19,20 @@ git clone --recursive https://github.com/Mingxuan-W/pod.git
 - pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 ```
 
-## Install  [GARField](https://github.com/chungmin99/garfield)
+### Install  [GARField](https://github.com/chungmin99/garfield)
 ```
 - cd dependencies/garfield
 - pip install --extra-index-url=https://pypi.nvidia.com cudf-cu12==24.2.2 cuml-cu12==24.2.0  cupy==13.3.0
 - pip install -e.
 ```
 
-## Install dig
+### Install dig
 ```
 - cd dependencies/dig
 - pip install -e.
 ```
 
-## Install pod
+### Install pod
 ```
 - pip install -e.
 ```

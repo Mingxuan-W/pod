@@ -21,13 +21,13 @@ def get_dataset_config(dataset_name):
     GLOBAL_PATH =os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
     # Define configurations for different datasets
-    if dataset_name == "toy2":
+    if dataset_name == "tractor":
         return ConfigDict({
-            'dig_config_path': f'{GLOBAL_PATH}/outputs/toy2/dig/2025-03-30_095758/config.yml',
-            'state_path': f"{GLOBAL_PATH}/state/toy2.pt",
-            'rgb_state_path': f"{GLOBAL_PATH}/state/toy2_rgb.pt",
-            'video_folder': f"{GLOBAL_PATH}/video/toy2_long",
-            'mask_folder': f"{GLOBAL_PATH}/video/toy2_long/masks",
+            'dig_config_path': f'{GLOBAL_PATH}/outputs/tractor/dig/2025-03-30_095758/config.yml',
+            'state_path': f"{GLOBAL_PATH}/state/tractor.pt",
+            'rgb_state_path': f"{GLOBAL_PATH}/state/tractor_rgb.pt",
+            'video_folder': f"{GLOBAL_PATH}/video/tractor",
+            'mask_folder': f"{GLOBAL_PATH}/video/tractor_0/masks",
             'data_type': "real",  # or "synthetic"
         })
     elif dataset_name == "jumping_lamp":

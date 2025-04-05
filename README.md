@@ -90,6 +90,6 @@ video/
 - python scripts/run_pod_pipeline.py --video_idx 0 --dataset_name tractor --preload_camera --run_name default --rsrd_path video/tractor/tractor_0/init/rsrd_/init_pose.pt
 ``` 
 ### TODO List 
-- [] DataSet 
-- [] Visualization Code
-- [] Evaluation Code
+- [ ] DataSet 
+- [ ] Visualization Code
+- [ ] Evaluation Code
